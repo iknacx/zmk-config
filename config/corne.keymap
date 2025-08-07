@@ -39,10 +39,10 @@
     default {
       label = "base";
       bindings = <
-        &kp Q      &kp W      &kp E      &kp R       &kp T             &kp Y        &kp U       &kp I        &kp O           &kp P
-        &hm LGUI A &hm LALT S &hm LCTL D &hm LSHFT F &lt 2 G           &lt 2 H      &hm LSHFT J &hm LCTL K   &hm LALT L      &hm LGUI ES_N_TILDE
-        &kp Z      &hm RALT X &kp C      &kp V       &kp B             &kp N        &kp M       &kp ES_COMMA &hm RALT ES_DOT &kp ES_MINUS
-                              &kp LGUI   &lt 1 TAB   &mt LSHFT SPACE   &mt LCTL RET &lt 1 BSPC  &kp RALT
+        &kp Q      &kp W      &kp E      &kp R       &kp T       &kp Y   &kp U       &kp I        &kp O           &kp P
+        &hm LGUI A &hm LALT S &hm LCTL D &hm LSHFT F &lt 2 G     &lt 2 H &hm LSHFT J &hm LCTL K   &hm LALT L      &hm LGUI ES_N_TILDE
+        &kp Z      &hm RALT X &kp C      &kp V       &kp B       &kp N   &kp M       &kp ES_COMMA &hm RALT ES_DOT &kp ES_MINUS
+                              &kp ESC    &lt 1 TAB   &kp SPACE   &kp RET &lt 1 BSPC  &kp DEL
       >;
     };
 
@@ -52,7 +52,7 @@
         &kp ES_PLUS &kp ES_MINUS &kp ES_STAR &kp ES_FSLH &kp ES_PRCNT   &kp ES_AT     &kp ES_AMPS &kp ES_PIPE &kp ES_CARET &kp ES_TILDE
         &kp N1      &kp N2       &kp N3      &kp N4      &kp N5         &kp N6        &kp N7      &kp N8      &kp N9       &kp N0
         &kp ES_LT   &kp ES_LBKT  &kp ES_LBRC &kp ES_LPAR &kp ES_EQUAL   &kp ES_DOLLAR &kp ES_RPAR &kp ES_RBRC &kp ES_RBKT  &kp ES_GT
-                                 &kp ES_DEG  &trans      &none          &none         &trans      &kp ES_NOT
+                                 &kp ES_DEG  &trans      &kp LSHFT      &none         &trans      &kp ES_NOT
       >;
     };
 
