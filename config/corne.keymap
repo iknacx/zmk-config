@@ -66,6 +66,15 @@
       >;
     };
 
+    mouse {
+      bindings = <
+        &none &none &none &none &none             &none &none &none &none &none
+        &none &none &none &none &none             &none &none &none &none &none
+        &none &none &none &none &none             &none &none &none &none &none
+                          &none &none &none &none &none &none
+      >;
+    };
+
     config {
       label = "config";
       bindings = <
@@ -78,11 +87,11 @@
   };
 };
 
-/* template { */
-/*   bindings = < */
-/*     &none &none &none &none &none             &none &none &none &none &none */
-/*     &none &none &none &none &none             &none &none &none &none &none */
-/*     &none &none &none &none &none             &none &none &none &none &none */
-/*                       &none &none &none &none &none &none */
-/*   >; */
-/* }; */
+    /* template { */
+    /*   bindings = < */
+    /*     &none &none &none &none &none             &none &none &none &none &none */
+    /*     &none &none &none &none &none             &none &none &none &none &none */
+    /*     &none &none &none &none &none             &none &none &none &none &none */
+    /*                       &none &none &none &none &none &none */
+    /*   >; */
+    /* }; */
