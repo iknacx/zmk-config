@@ -38,17 +38,17 @@
   keymap {
     compatible = "zmk,keymap";
 
-    default {
+    default { // 0
       label = "base";
       bindings = <
-        &kp Q      &kp W      &kp E      &kp R       &kp T       &kp Y   &kp U       &kp I        &kp O           &kp P
-        &hm LGUI A &hm LALT S &hm LCTL D &hm LSHFT F &kp G       &lt 2 H &hm LSHFT J &hm LCTL K   &hm LALT L      &hm LGUI ES_N_TILDE
-        &lt 3 Z    &hm RALT X &kp C      &kp V       &kp B       &kp N   &kp M       &kp ES_COMMA &hm RALT ES_DOT &lt 2 ES_MINUS
-                              &kp ESC    &lt 1 TAB   &kp SPACE   &kp RET &lt 1 BSPC  &kp DEL
+        &kp Q      &kp W      &kp E      &kp R       &kp T       &kp Y     &kp U       &kp I        &kp O           &kp P
+        &hm LGUI A &hm LALT S &hm LCTL D &hm LSHFT F &kp G       &kp H     &hm LSHFT J &hm LCTL K   &hm LALT L      &hm LGUI ES_N_TILDE
+        &lt 3 Z    &hm RALT X &kp C      &lt 2 V     &kp B       &kp N     &lt 2 M     &kp ES_COMMA &hm RALT ES_DOT &lt 3 ES_MINUS
+                              &kp ESC    &lt 1 TAB   &kp SPACE   &kp RET   &lt 1 BSPC  &kp DEL
       >;
     };
 
-    code {
+    code { // 1
       label = "code";
       bindings = <
         &kp ES_PLUS &kp ES_MINUS &kp ES_STAR   &kp ES_FSLH &kp ES_PRCNT   &kp ES_AT     &kp ES_AMPS &kp ES_PIPE &kp ES_CARET &kp ES_TILDE
@@ -58,27 +58,27 @@
       >;
     };
 
-    text {
+    text { // 2
       label = "text";
       bindings = <
-        &kp ES_IEXCL &kp ES_IQMARK &kp ES_EXCL &kp ES_QMARK &kp ES_BSLH     &none &none    &kp UP   &none     &none
-        &kp ES_ACUTE &kp ES_GRAVE  &kp ES_SQT  &kp ES_DQT   &kp ES_UMLAUT   &none &kp LEFT &kp DOWN &kp RIGHT &none
-        &kp ES_LT    &kp ES_DOLLAR &kp ES_HASH &kp ES_EQUAL &kp ES_GT       &none &none    &none    &none     &trans
-                                   &none       &none        &none           &none &none    &none
+        &kp ES_IEXCL &kp ES_IQMARK &kp ES_EXCL &kp ES_QMARK &kp ES_BSLH     &none    &none    &none  &none     &none
+        &kp ES_ACUTE &kp ES_GRAVE  &kp ES_SQT  &kp ES_DQT   &kp ES_UMLAUT   &kp LEFT &kp DOWN &kp UP &kp RIGHT &none
+        &kp ES_LT    &kp ES_DOLLAR &kp ES_HASH &kp ES_EQUAL &kp ES_GT       &none    &none    &none  &none     &trans
+                                   &none       &none        &none           &none &none &none
       >;
     };
 
-    navigation {
+    navigation { // 3
       label = "nav";
       bindings = <
         &none  &mkp MB4       &mmv MOVE_UP   &mkp MB5        &msc SCRL_UP     &none    &none    &none  &none     &none
         &none  &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &mkp MCLK        &kp LEFT &kp DOWN &kp UP &kp RIGHT &none
-        &trans &msc SCRL_LEFT &none          &msc SCRL_RIGHT &msc SCRL_DOWN   &none    &none    &none  &none     &none
+        &trans &msc SCRL_LEFT &none          &msc SCRL_RIGHT &msc SCRL_DOWN   &none    &none    &none  &none     &trans
                               &none          &mkp RCLK       &mkp LCLK        &none    &none    &none
       >;
     };
 
-    config {
+    config { // 4
       label = "config";
       bindings = <
         &kp F12 &kp F7 &kp F8 &kp F9 &none        &none        &none        &none        &none        &none
